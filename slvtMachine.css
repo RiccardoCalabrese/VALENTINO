@@ -9,9 +9,10 @@
 .emoji {
   width: 25%;
   height: 200px;
-  font-size: 36px;
+  font-size: 5vw;
   text-align: center;
 }
+
 
 #message {
   font-size: 36px;
