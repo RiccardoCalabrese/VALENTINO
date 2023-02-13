@@ -1,6 +1,6 @@
 .emoji-grid {
-  width: 80%;
-  margin: 25px auto;
+  width: 100%;
+  margin: auto;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
