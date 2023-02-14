@@ -20,6 +20,14 @@
   margin-top: 20px;
 }
 
+p{
+  font-family: Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
 body {
   font-family: Helvetica, Arial, sans-serif;
   display: flex;

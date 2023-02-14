@@ -60,7 +60,9 @@ function checkWinningCombination(emojis) {
       }
     }
     if (winningCount === 4) {
-      document.querySelector("#message").innerHTML = combination.message;
+      const message = document.createElement("p");
+      message.innerHTML = combination.message;
+      document.querySelector("#emojiGrid").appendChild(message);
       break;
     }
   }
