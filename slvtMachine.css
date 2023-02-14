@@ -5,8 +5,8 @@ body {
   min-height: 36px;
   align-items: center;
   justify-content: space-between;
-  height: 90vh;
-  margin: 5vh;
+  height: 70vh;
+  margin: 15vh;
 }
 
 h1 {
@@ -14,9 +14,20 @@ h1 {
   text-align: center;
   height: 20vh;
 }
-button:focus {
-  outline: none;
+
+.white-button {
+  width: calc(max(30vw, 35vh));
+  height: calc(max(10vw, 12vh));
+  font-size: calc(max(5vw, 6vh));
+  font-weight: bold;
+  margin: 2vw auto;
+  display: block;
+  text-transform: uppercase;
+  border: calc(max(1vw, 1vh)) solid;
+  border-radius: calc(max(25vw, 30vh));
+  background: #fff;
 }
+
 button {
   width: calc(max(25vw, 30vh));
   height: calc(max(20vw, 25vh));
@@ -28,6 +39,32 @@ button {
   border: calc(max(1vw, 1vh)) solid;
   border-radius: calc(max(25vw, 30vh));
   background: none;
+}
+
+h1#daje {
+  animation: flash 0.2s infinite;
+}
+
+body#win {
+  animation: flash 0.2s infinite;
+}
+
+@keyframes flash {
+  0%, 20% {
+    background-color: #F44336; /* Red */
+  }
+  20%, 40% {
+    background-color: #FFC107; /* Amber */
+  }
+  40%, 60% {
+    background-color: #4CAF50; /* Green */
+  }
+  60%, 80% {
+    background-color: #2196F3; /* Blue */
+  }
+  80%, 100% {
+    background-color: #E91E63; /* Pink */
+  }
 }
 
 .emoji-grid {
@@ -42,7 +79,7 @@ button {
 .emoji {
   width: 25%;
   height: 200px;
-  font-size: calc(max(10vw, 12vh));
+  font-size: calc(max(10vw, 10vh));
   text-align: center;
 }
 
