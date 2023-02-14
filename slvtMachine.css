@@ -57,7 +57,7 @@ button {
 
 @media (max-width: 768px) {
   .emoji {
-    width: 50%;
+    width: 100%;
   }
 }
 
