@@ -5,8 +5,8 @@ body {
   min-height: 36px;
   align-items: center;
   justify-content: space-between;
-  height: 70vh;
-  margin: 15vh;
+  height: 90vh;
+  margin: 5vh;
 }
 
 body.coupon {
