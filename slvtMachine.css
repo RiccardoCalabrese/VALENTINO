@@ -9,6 +9,12 @@ body {
   margin: 15vh;
 }
 
+body.coupon {
+  background-color: #BE132D;
+  color: #ffb200;
+}
+
+
 h1 {
   font-size: calc(max(7vw, 8vh));
   text-align: center;
@@ -40,6 +46,56 @@ button {
   border-radius: calc(max(25vw, 30vh));
   background: none;
 }
+
+.credit-card {
+  width: 350px;
+  height: 200px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+.credit-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: #3f51b5;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-number {
+  font-size: 100vw;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.expiration, .cvc {
+  font-size: 40px;
+  margin-top: 5px;
+}
+
+.amount {
+  font-size: 40px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.credit-card img {
+  height: 20px;
+  width: auto;
+  margin-right: 10px;
+}
+
 
 h1#daje {
   animation: flash 0.2s infinite;
