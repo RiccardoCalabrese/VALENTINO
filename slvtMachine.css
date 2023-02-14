@@ -40,7 +40,7 @@ button {
 .emoji {
   width: 25%;
   height: 200px;
-  font-size: calc(max(12vw, 10vh));
+  font-size: calc(max(10vw, 12vh));
   text-align: center;
 }
 
