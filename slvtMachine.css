@@ -2,33 +2,29 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   display: flex;
   flex-direction: column;
+  min-height: 36px;
   align-items: center;
-  height: 100vh;
+  justify-content: space-between;
+  height: 90vh;
+  margin: 5vh;
 }
 
 h1 {
-  font-size: 7vw;
+  font-size: calc(max(7vw, 8vh));
   text-align: center;
-}
-
-p {
-  font-family: Helvetica, Arial, sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 10vh;
-  margin: 0;
+  height: 20vh;
 }
 
 button {
-  width: 30vw;
-  height: 15vw;
-  font-size: 7vw;
+  width: calc(max(25vw, 30vh));
+  height: calc(max(20vw, 25vh));
+  font-size: calc(max(7vw, 8vh));
   font-weight: bold;
+  margin: 2vw auto;
   display: block;
   text-transform: uppercase;
-  border: 1vw solid;
-  border-radius: 7vw;
+  border: calc(max(1vw, 1vh)) solid;
+  border-radius: calc(max(25vw, 30vh));
   background: none;
 }
 
@@ -41,16 +37,21 @@ button {
   flex-wrap: nowrap;
 }
 
-
 .emoji {
   width: 25%;
   height: 200px;
-  font-size: 10vw;
+  font-size: calc(max(12vw, 10vh));
   text-align: center;
 }
 
 @media (max-width: 768px), (max-width: 480px) {
   .emoji {
     width: 100%;
+  }
+  body {
+  font-family: Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 36px;
   }
 }
