@@ -21,6 +21,12 @@ h1 {
   height: 20vh;
 }
 
+h2 {
+  font-size: calc(max(3vw, 5vh));
+  text-align: center;
+  height: 20vh;
+}
+
 .white-button {
   width: calc(max(30vw, 35vh));
   height: calc(max(10vw, 12vh));
