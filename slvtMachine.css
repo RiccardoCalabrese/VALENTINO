@@ -14,7 +14,9 @@ h1 {
   text-align: center;
   height: 20vh;
 }
-
+button:focus {
+  outline: none;
+}
 button {
   width: calc(max(25vw, 30vh));
   height: calc(max(20vw, 25vh));
