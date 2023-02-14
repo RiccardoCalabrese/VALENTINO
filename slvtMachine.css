@@ -1,10 +1,46 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 7vw;
+  text-align: center;
+}
+
+p {
+  font-family: Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 10vh;
+  margin: 0;
+}
+
+button {
+  width: 30vw;
+  height: 15vw;
+  font-size: 7vw;
+  font-weight: bold;
+  display: block;
+  text-transform: uppercase;
+  border: 1vw solid;
+  border-radius: 7vw;
+  background: none;
+}
+
 .emoji-grid {
-  width: 80%;
-  margin: 25px auto;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  align-items: center;
+  flex-wrap: nowrap;
 }
+
 
 .emoji {
   width: 25%;
@@ -13,62 +49,8 @@
   text-align: center;
 }
 
-
-#message {
-  font-size: 36px;
-  text-align: center;
-  margin-top: 20px;
-}
-
-p{
-  font-family: Helvetica, Arial, sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
-}
-
-body {
-  font-family: Helvetica, Arial, sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-}
-
-h1 {
-  font-size: 7vw;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-button {
-  width: 30vw;
-  height: 15vw;
-  font-size: 7vw;
-  font-weight: bold;
-  margin: 2vw auto;
-  display: block;
-  text-transform: uppercase;
-  border: 1vw solid;
-  border-radius: 7vw;
-  background: none;
-}
-
-@media (max-width: 768px) {
+@media (max-width: 768px), (max-width: 480px) {
   .emoji {
     width: 100%;
-  }
-}
-
-@media (max-width: 480px) {
-  .emoji {
-    width: 100%;
-  }
-  h1 {
-    font-size: 50vw;
-    text-align: center;
-    margin-top: 20px;
-    vertical-align: middle;
   }
 }
