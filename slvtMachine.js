@@ -49,32 +49,21 @@ function checkWinningCombination(emojis) {
     {combination: new Set(["🅿️", "🆙", "ℹ️", "❤️‍🔥"]), message: "BUON SANVAAAAAAA PUPIIII"}
   ];
 
-  let winningMessage = null;
-
   for (let combination of winningCombinations) {
     if (combination.combination.size !== 4) {
       continue;
     }
-
     let winningCount = 0;
     for (let emoji of emojis) {
-      if (combination.combination.has(emoji.textContent)) {
+      if (combination.combination.has(emoji)) {
         winningCount++;
       }
     }
-
     if (winningCount === 4) {
-      winningMessage = combination.message;
+      alert(combination.message);
       break;
     }
   }
-
-  if (winningMessage) {
-    document.querySelector("#message").textContent = winningMessage;
-  } else {
-    document.querySelector("#message").textContent = "Sorry, you lost. Try again!";
-  }
 }
-
 
 generateEmojis();
