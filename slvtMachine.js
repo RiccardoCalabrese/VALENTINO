@@ -2,7 +2,7 @@ const winningCombinations = [
   {combination: new Set(["🐭", "💧", "💕", "💤"]), message: "RICCARDO TI CHIAMA TOPINA. GAYYYY. RIPROVA"},
   {combination: new Set(["😼", "🦶", "💤", "🔪"]), message: "AIAA MUSKI TI ASSALTA I PIEDI NELLA NOTTE!! RIPROVA"},
   {combination: new Set(["😠", "🍫", "🚬", "👨‍🍳"]), message: "OH NO! LO CHEF TI RIFILA UN SIGARONE AL CIOCCOLATO! RIPROVA"},
-  {combination: new Set(["🅿️", "🆙", "ℹ️", "❤️‍🔥"]), message: "BUON SANVAAAAAAA PUPIIII", redirect: "https://youtube.com/clip/UgkxJ8FuEgY2uRzZjNKwDLbEjYySTBOeGbBo"}
+  {combination: new Set(["🅿️", "🆙", "ℹ️", "❤️‍🔥"]), message: "BUON SANVAAAAAAA PUPIIII", redirect: "win.html"}
 ];
 
 function generateEmojis() {
@@ -34,7 +34,7 @@ function checkWinningCombination(emojis) {
     setTimeout(() => {
       alert(message);
       if (redirect) {
-        window.location.href = "https://youtube.com/clip/UgkxJ8FuEgY2uRzZjNKwDLbEjYySTBOeGbBo";
+        window.location.href = "win.html";
       }
     }, 1000);
   }
