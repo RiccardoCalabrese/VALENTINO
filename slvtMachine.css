@@ -35,15 +35,15 @@ h1 {
 }
 
 button {
-  width: 20vw;
-  height: 10vw;
+  width: 40vw;
+  height: 20vw;
   font-size: 10vw;
   font-weight: bold;
   margin: 2vw auto;
   display: block;
   text-transform: uppercase;
-  border: 0.7vw solid;
-  border-radius: 5vw;
+  border: 1vw solid;
+  border-radius: 10vw;
   background: none;
 }
 
